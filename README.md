@@ -138,3 +138,11 @@ Para dar diseños únicos y no sean hereditarios de algunos elementos, eh creado
 }
 ```
 
+### Fuente
+Agregué una fuente para el elemento body, de esta forma será hereditario para todos los elementos que se enecuentren dentro de este:
+```sh
+body{
+  font-family: Verdana, Arial, sans-serif;
+}
+```
+
