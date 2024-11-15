@@ -2,7 +2,7 @@
 * Link Github Repo:
 * Link Netlify:
 
-# Camping El Lago
+# Camping la Cumbre
 Esta página tratará sobre quienes son "Camping La Cumbre" (que ofrecen, metodos de pago, ubicación, etc). Te mostraré como lo fui armando:
 ```sh
 <header class="encabezado"> # encabezado de la página
@@ -78,3 +78,63 @@ footer{ # ell pie de la página tendrá un color de fondo negro, con un alto de 
   margin-top: 0; # elimino el espacio que tiene arriba, con la finalidad de que lo que haya en el elemento p, quede cerca de la imagen
 }
 ```
+
+## Color y fuente
+Le agruegé colores y fuente a la página, estos son los colores trabajados:
+```sh
+:root{
+  --colorFondo: #faf4ea; # cremita
+  --colorEnlace: #ed862b; # naranaja
+  --colorTitulo: #6c3f26; # marrón oscuro
+  --colorFondoSubtitulos: #614433; # marrón no tan oscuro
+  --colorLetraSubtitulo: #ebb912; # amarillo
+  --colorEnlace1: #10abfe; # celeste
+  --colorEnlace2: #ff4b3e; # rojo
+}
+```
+* :root me va a permitir majerar el nodo principal del documento, creo los colores acá y los voy a usar luego de esta forma: 
+```sh
+body{
+  background-color: var(--colorFondo);
+}
+
+.color-sub-unico{
+  color: var(--colorLetraSubtitulo);
+}
+```
+No todo el tiempo usaré var(), bien podrás verlo al momento de dar colores en letras de algunos elementos o fondo:
+```sh
+h2{
+  color: #faf4ea;
+}
+p{
+  color: #614433;
+}
+ul>li , ol>li{ # le da el mismo color a las listas desordenadas y ordenadas
+  color: #614433;
+}
+footer{
+  background-color: #111; # negro
+}
+```
+
+### Clases
+Para dar diseños únicos y no sean hereditarios de algunos elementos, eh creado clases, se las asigné a algunos elementos del archivo index.html, estas son las clases trabajadas en el archivo style.css:
+```sh
+.encabezado p{
+  font-size: 20px; # tamaño del texto para los elementos p que contenga el header
+}
+.encabezado a{
+  font-weight: bold; # grosor del texto para los elementos de anclaje que contenga el elemento header
+}
+.color-sub-unico{
+  color: var(--colorLetraSubtitulo); # color del texto para un elemento h2 con esta clase
+}
+.color-ln{
+  color: var(--colorEnlace1); # color para un elemento a
+}
+.color-p12{
+  color: var(--colorEnlace2); # otro color para un elemento a
+}
+```
+
