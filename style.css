@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+footer{
+  background-color: #111;
+  height: 100px;
+  text-align: center;
+}
+
+.encabezado{
+  font-size: 20px;
+}
+.texto-nav{
+  margin-top: 0;
+}
+
+
