@@ -42,7 +42,9 @@ a{
 footer{
   background-color: #111;
   height: 100px;
+  line-height: 100px;
   text-align: center;
+  color: #ebb912;
 }
 
 /* clases */

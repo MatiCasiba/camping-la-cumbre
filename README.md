@@ -1,5 +1,5 @@
 * Nombre: Matias Casiba
-* Link Github Repo:
+* Link Github Repo: https://github.com/MatiCasiba/camping-la-cumbre
 * Link Netlify:
 
 # Camping la Cumbre
@@ -143,6 +143,19 @@ Agregué una fuente para el elemento body, de esta forma será hereditario para 
 ```sh
 body{
   font-family: Verdana, Arial, sans-serif;
+}
+```
+
+## Actualización
+Eh modificado una cosa en footer, agregue un color a la letra en amarillo y lo centre al texto de manera vertical tambien:
+
+```sh
+footer{
+  background-color: #111;
+  height: 100px;
+  line-height: 100px; # igual al alto del footer para centrar verticalmente
+  text-align: center;
+  color: #ebb912;
 }
 ```
 
